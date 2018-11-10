@@ -9,5 +9,16 @@
     <Import_RootNamespace>MyHibernateUtil</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DecryptConnectionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyConfigurationExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NHibernateHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NObjCopy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SessionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)sysconfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)nhibernate-configuration-x-factories.xsd" />
+    <None Include="$(MSBuildThisFileDirectory)nhibernate-configuration.xsd" />
+    <None Include="$(MSBuildThisFileDirectory)nhibernate-mapping.xsd" />
   </ItemGroup>
 </Project>
