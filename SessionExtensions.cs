@@ -13,7 +13,7 @@ namespace MyHibernateUtil
     public static class SessionExtensions
     {
 
-
+#if NET_4_0
         public static Boolean IsDirtyEntity(this ISession session, Object entity)
         {
 
@@ -153,6 +153,6 @@ namespace MyHibernateUtil
             return ((isDirty == true) ? oldState[index] : currentState[index]);
 
         }
-
+#endif
     }
 }

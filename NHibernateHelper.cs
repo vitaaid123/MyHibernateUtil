@@ -253,7 +253,7 @@ namespace MyHibernateUtil
                     transaction.Commit();
                     return result;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     transaction.Rollback();
                     throw;

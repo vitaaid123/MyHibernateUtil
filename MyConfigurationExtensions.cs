@@ -10,13 +10,6 @@ namespace MyHibernateUtil
 {
     public static class MyConfigurationExtensions
     {
-        /// <summary>
-        ///		Configure NHibernate from a specified session-factory.
-        /// </summary>
-        /// <param name="config"></param>
-        /// <param name="fileName">System location of '.cfg.xml' configuration file.</param>
-        /// <param name="factoryName">Name value of the desired session-factory.</param>
-        /// <returns></returns>
         public static Configuration Configure(this Configuration config, string factoryName, StreamReader sr)
         {
 
@@ -115,7 +108,7 @@ namespace MyHibernateUtil
                 else
                     throw new Exception("<hibernate-configuration xmlns=\"urn:nhibernate-configuration-2.2-x-factories\"> element was not found in the configuration file.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
